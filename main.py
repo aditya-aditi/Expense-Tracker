@@ -1,9 +1,8 @@
-# expenseDict = {}
-# moneySpent = input("Enter the money spent or write quit to ").lower().strip()
-# while moneySpent != "quit"
-
 import time
+import os
 
+if not os.path.exists("bin"):
+    os.makedirs("bin")
 def add_expense():
     expenseList = []
     moneySpent = input("Write the amount or write quit to quit: ").lower().strip()
